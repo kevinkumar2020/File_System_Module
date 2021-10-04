@@ -31,7 +31,7 @@ fs.rmdir(nameDir,function(err,result){
 var filename = "FSfile.txt";
 var data = "Hello World...";
 // Write File 
-fs.writeFileSync(filename,data,function(err){
+fs.writeFile(filename,data,function(err){
     if(err){
         console.log(err);
     }else{
@@ -49,7 +49,7 @@ fs.readFile(filename,"utf-8",function(err,result){
 });
 
 // Append data to file
-fs.appendFileSync(filename,"Kevin",function(err,result){
+fs.appendFile(filename,"Kevin",function(err,result){
     if(err){
         console.log(err);
     }else{
@@ -59,7 +59,7 @@ fs.appendFileSync(filename,"Kevin",function(err,result){
 
 // Update / Replace file with new data
 data = "Replace file with new data";
-fs.writeFileSync(filename,data,function(err){
+fs.writeFile(filename,data,function(err){
     if(err){
         console.log(err);
     }else{
@@ -73,6 +73,6 @@ fs.rename(renameFileName,filename,function(err){
     if(err){
         console.log(err);
     }else{
-        console.log("Rename File","Rename ReFSfile.txt to ReFsfile.txt");
+        console.log("Rename File");
     }
 });
