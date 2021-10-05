@@ -1,7 +1,7 @@
 # File_System_Module
 NodeJs Module
 
-## All Opreation Done With User Input
+## All Opreations Done With User Input
 
 ## Write a Node.js program to do the following:
 * Create Directory ( Hint: fs.mkdir )
